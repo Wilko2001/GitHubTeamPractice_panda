@@ -16,12 +16,17 @@ exports[`ForecastDetails renders correctly 1`] = `
       <span
         class="forecast-details__label"
       >
-        Temperature:
+         Max Temperature: 
       </span>
       <span
         class="forecast-details__temperature-max"
       >
-        22°C
+        22°C  
+      </span>
+      <span
+        class="forecast-details__label"
+      >
+         Min Temperature: 
       </span>
       <span
         class="forecast-details__temperature-min"
@@ -35,12 +40,12 @@ exports[`ForecastDetails renders correctly 1`] = `
       <span
         class="forecast-details__label"
       >
-        Humidity:
+         Humidity: 
       </span>
       <span
         class="forecast-details__humidity"
       >
-        20 % 
+         20 % 
       </span>
     </div>
     <div
@@ -49,7 +54,7 @@ exports[`ForecastDetails renders correctly 1`] = `
       <span
         class="forecast-details__label"
       >
-        Wind:
+         Wind: 
       </span>
       <span
         class="forecast-details__wind-direction"
@@ -59,7 +64,7 @@ exports[`ForecastDetails renders correctly 1`] = `
       <span
         class="forecast-details__wind-speed"
       >
-        18 mph 
+         18 mph 
       </span>
     </div>
   </div>
