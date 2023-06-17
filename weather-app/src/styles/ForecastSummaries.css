@@ -2,3 +2,26 @@
     display: flex;
     justify-content: space-between;
 }
+
+.forecast-details {
+    position: absolute;
+    bottom: 45%;
+    left: 35%;
+    border-style: solid;
+    padding: 1%;
+    border-width: 2px;
+}
+
+.forecast-summary__temperature {
+    padding: 3%;
+}
+
+.forecast-summary__description {
+    padding: 3%;
+}
+
+button {
+    border-radius: 5px;
+    border-color: black;
+    border-width: 2px;
+}

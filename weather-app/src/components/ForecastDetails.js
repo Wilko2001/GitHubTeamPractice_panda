@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/ForecastSummaries.css";
 
 function ForecastDetails({ forecast }) {
   const { date, temperature, humidity, wind } = forecast;
@@ -8,26 +9,29 @@ function ForecastDetails({ forecast }) {
     <div className="forecast-details">
       <div className="forecast-details__date">{formattedDate}</div>
       <div className="forecast-details__temperature">
-        <span className="forecast-details__label"> Max Temperature: </span>
-        <span className="forecast-details__temperature-max">
+        <strong className="forecast-details__label"> Max Temperature: </strong>
+        <strong className="forecast-details__temperature-max">
           {temperature.max}&deg;C{"  "}
-        </span>
+        </strong>
 
-        <span className="forecast-details__label"> Min Temperature: </span>
-        <span className="forecast-details__temperature-min">
+        <strong className="forecast-details__label"> Min Temperature: </strong>
+        <strong className="forecast-details__temperature-min">
           {temperature.min}&deg;C
-        </span>
+        </strong>
       </div>
       <div className="forecast-details_humidity">
-        <span className="forecast-details__label"> Humidity: </span>
-        <span className="forecast-details__humidity"> {humidity} % </span>
+        <strong className="forecast-details__label"> Humidity: </strong>
+        <strong className="forecast-details__humidity"> {humidity} % </strong>
       </div>
       <div className="forecast-details__wind">
-        <span className="forecast-details__label"> Wind: </span>
-        <span className="forecast-details__wind-direction">
+        <strong className="forecast-details__label"> Wind: </strong>
+        <strong className="forecast-details__wind-direction">
           {wind.direction}
-        </span>
-        <span className="forecast-details__wind-speed"> {wind.speed} mph </span>
+        </strong>
+        <strong className="forecast-details__wind-speed">
+          {" "}
+          {wind.speed} mph{" "}
+        </strong>
       </div>
     </div>
   );
