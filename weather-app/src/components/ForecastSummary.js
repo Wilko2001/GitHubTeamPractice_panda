@@ -6,7 +6,7 @@ function ForecastSummary(props) {
   const { date, description, icon, temperature, onSelect } = props;
   const weatherCode = `${icon.slice(0, 1)}00`;
   const formattedDate = new Date(date).toDateString();
-  console.log(weatherCode);
+
   return (
     <div className="forecast-summary" data-testid="forecast-summary">
       <div className="forecast-summary__date">{formattedDate}</div>

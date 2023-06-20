@@ -13,59 +13,59 @@ exports[`ForecastDetails renders correctly 1`] = `
     <div
       class="forecast-details__temperature"
     >
-      <span
+      <strong
         class="forecast-details__label"
       >
          Max Temperature: 
-      </span>
-      <span
+      </strong>
+      <strong
         class="forecast-details__temperature-max"
       >
         22°C  
-      </span>
-      <span
+      </strong>
+      <strong
         class="forecast-details__label"
       >
          Min Temperature: 
-      </span>
-      <span
+      </strong>
+      <strong
         class="forecast-details__temperature-min"
       >
         12°C
-      </span>
+      </strong>
     </div>
     <div
       class="forecast-details_humidity"
     >
-      <span
+      <strong
         class="forecast-details__label"
       >
          Humidity: 
-      </span>
-      <span
+      </strong>
+      <strong
         class="forecast-details__humidity"
       >
          20 % 
-      </span>
+      </strong>
     </div>
     <div
       class="forecast-details__wind"
     >
-      <span
+      <strong
         class="forecast-details__label"
       >
          Wind: 
-      </span>
-      <span
+      </strong>
+      <strong
         class="forecast-details__wind-direction"
       >
         n
-      </span>
-      <span
+      </strong>
+      <strong
         class="forecast-details__wind-speed"
       >
          18 mph 
-      </span>
+      </strong>
     </div>
   </div>
 </DocumentFragment>
