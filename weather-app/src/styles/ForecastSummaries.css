@@ -1,11 +1,12 @@
 .forecast-summaries {
     display: flex;
     justify-content: space-between;
+    padding-top: 1%;
 }
 
 .forecast-details {
     position: absolute;
-    bottom: 45%;
+    bottom: 40%;
     left: 35%;
     border-style: solid;
     padding: 1%;
@@ -24,4 +25,4 @@ button {
     border-radius: 5px;
     border-color: black;
     border-width: 2px;
-}
+};
