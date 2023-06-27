@@ -1,11 +1,10 @@
 import "../styles/app.css";
+import NavBar from "./NavBar";
 
 function App() {
   return (
     <div className="App">
-      Surreal Estate
-      <header className="App-header">
-      </header>
+      <NavBar />
     </div>
   );
 }

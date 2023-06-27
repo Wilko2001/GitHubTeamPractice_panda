@@ -1,0 +1,32 @@
+.navbar {
+    background-color: white;
+    border-bottom: grey;
+    display: flex;
+    align-items: center;
+}
+
+.navbar img {
+    height: 120px;
+    margin-right: 2em;
+}
+
+.navbar__links-wrapper {
+    margin: 0;
+    padding: 40px;
+    display: inline-block;
+    font-size: 25px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+a {
+    color: rgb(134, 75, 75) !important;
+
+}
+
+.navbar__title {
+    margin-right: 2em;
+    color: rgb(134, 75, 75);
+}

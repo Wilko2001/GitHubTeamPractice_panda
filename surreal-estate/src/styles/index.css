@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Esteban&display=swap');
+
 body {
   margin: 0;
   padding: 0;
   background-color: #eceef1;
+  font-family: 'Esteban', serif;
 }
 
 code {}
