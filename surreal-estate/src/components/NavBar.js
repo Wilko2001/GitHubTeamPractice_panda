@@ -1,6 +1,7 @@
 import React from 'react';
 import "../styles/navbar.css";
 import logo from "../images/project-logo.png";
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
@@ -9,10 +10,10 @@ const NavBar = () => {
             <div className="navbar__title">Surreal Estate</div>
             <ul className="navbar__links-wrapper">
                 <li>
-                    <a href="View Properties"> View Properties</a>
+                    <Link className="navbar__view-properties" to="/"> View Properties</Link>
                 </li>
                 <li>
-                    <a href="Add a Property">Add a Property</a>
+                    <Link className="navbar__add-properties" to="/add">Add a Property</Link>
                 </li>
             </ul>
         </div>

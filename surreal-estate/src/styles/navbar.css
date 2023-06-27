@@ -21,7 +21,8 @@
     flex: 1;
 }
 
-a {
+navbar__view-properties,
+navbar__add-properties {
     color: rgb(134, 75, 75) !important;
 
 }
