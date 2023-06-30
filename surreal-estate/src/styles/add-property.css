@@ -1,3 +1,48 @@
 .add-property {
-    padding: 50px;
+    margin: 10px;
+    padding: 0 10px;
+    color: rgb(134, 75, 75);
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.add-btn {
+    background-color: rgb(134, 75, 75);
+    color: white;
+    height: 50px;
+    width: 100px;
+    bottom: 50px;
+    margin-top: 200px;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.add_property_input {
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border-style: ridge;
+    border-width: 3px;
+    border-color: rgb(153, 138, 138);
+
+
+}
+
+.add_dropdown {
+    display: inline-block;
+    font-size: large;
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border-width: 2px;
+    margin-bottom: 15px;
+    border-width: 3px;
+    border-style: ridge;
+    border-color: rgb(153, 138, 138);
 }

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import "../styles/add-property.css"
 
 const AddProperties = () => {
     const initialState = {
@@ -22,7 +23,7 @@ const AddProperties = () => {
 
     const handleFieldChange = (event) => {
         setFields({ ...fields, [event.target.name]: event.target.value });
-    }
+    };
 
     console.log(fields);
 
@@ -30,8 +31,8 @@ const AddProperties = () => {
         <div className="add-property">
             <form onSubmit={handleAddProperty}>
                 <label htmlFor="title">
-                    Title
-                    <input
+                    Title: <br />
+                    <input className="add_property_input"
                         id="title"
                         name="title"
                         value={fields.title}
@@ -41,8 +42,9 @@ const AddProperties = () => {
                 </label>
 
                 <label htmlFor="city">
-                    City
-                    <select
+                    City:
+                    <br />
+                    <select className="add_dropdown"
                         id="city"
                         name="city"
                         value={fields.city}
@@ -54,8 +56,9 @@ const AddProperties = () => {
                     </select>
                 </label>
                 <label htmlFor="property_type">
-                    Property Type
-                    <select
+                    Property Type:
+                    <br />
+                    <select className="add_dropdown"
                         id="property_type"
                         name="property_type"
                         value={fields.property_type}
@@ -71,8 +74,9 @@ const AddProperties = () => {
                 </label>
 
                 <label htmlFor="email_address">
-                    Email Address
-                    <input
+                    Email Address:
+                    <br />
+                    <input className="add_property_input"
                         id="email_address"
                         name="email_address"
                         value={fields.email_adress}
@@ -82,8 +86,9 @@ const AddProperties = () => {
                 </label>
 
                 <label htmlFor="price">
-                    Price
-                    <input
+                    Price (pcm):
+                    <br />
+                    <input className="add_property_input"
                         type="number"
                         id="price"
                         name="price"
@@ -92,11 +97,11 @@ const AddProperties = () => {
                         pattern="[0-9]">
                     </input>
                 </label>
-                PCM
 
                 <label htmlFor="bedrooms">
-                    Bedrooms
-                    <input
+                    Bedrooms:
+                    <br />
+                    <input className="add_property_input"
                         type="number"
                         id="bedrooms"
                         name="bedrooms"
@@ -107,8 +112,9 @@ const AddProperties = () => {
                 </label>
 
                 <label htmlFor="bathrooms">
-                    Bathroom
-                    <input
+                    Bathroom:
+                    <br />
+                    <input className="add_property_input"
                         type="number"
                         id="bathroom"
                         name="bathroom"
@@ -118,8 +124,7 @@ const AddProperties = () => {
                     </input>
                 </label>
 
-                Add Property
-                <button type="submit">Add</button>
+                <button type="submit" className="add-btn">Add</button>
             </form>
         </div >
     );
