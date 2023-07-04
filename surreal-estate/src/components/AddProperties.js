@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "../styles/add-property.css"
+import image from "../images/back-image.jpeg";
+import axios from "axios";
+import Alert from "./Alert";
 
 const AddProperties = () => {
     const initialState = {
@@ -13,22 +16,44 @@ const AddProperties = () => {
             bedrooms: "",
 
         },
+
+        alert: {
+            message: "",
+            isSuccess: false,
+        },
     };
 
     const [fields, setFields] = useState(initialState.fields);
+    const [alert, setAlert] = useState(initialState.alert);
 
     const handleAddProperty = (event) => {
         event.preventDefault();
-    };
+
+        setAlert({ message: "", isSuccess: false });
+
+        axios.post('http://localhost:3000/api/v1/PropertyListing', fields)
+            .then(() => {
+                setAlert({
+                    message: "Property Added",
+                    isSuccess: true,
+                });
+            })
+            .catch(() => {
+                setAlert({
+                    message: "Server error. Please try again later.",
+                    isSuccess: false,
+                })
+            })
+
+    }
 
     const handleFieldChange = (event) => {
         setFields({ ...fields, [event.target.name]: event.target.value });
-    };
-
-    console.log(fields);
+    }
 
     return (
         <div className="add-property">
+            <img src={image} alt="back-ground" />
             <form onSubmit={handleAddProperty}>
                 <label htmlFor="title">
                     Title: <br />
@@ -112,19 +137,20 @@ const AddProperties = () => {
                 </label>
 
                 <label htmlFor="bathrooms">
-                    Bathroom:
+                    Bathrooms:
                     <br />
                     <input className="add_property_input"
                         type="number"
-                        id="bathroom"
-                        name="bathroom"
-                        value={fields.bathroom}
+                        id="bathrooms"
+                        name="bathrooms"
+                        value={fields.bathrooms}
                         onChange={handleFieldChange}
                         pattern="[0-9]">
                     </input>
                 </label>
 
                 <button type="submit" className="add-btn">Add</button>
+                <Alert message={alert.message} success={alert.isSuccess} />
             </form>
         </div >
     );

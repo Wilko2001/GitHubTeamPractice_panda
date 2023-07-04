@@ -1,0 +1,31 @@
+/* .alert {
+    border: 50px;
+    padding: 10px;
+    color: black;
+    width: 400px;
+}
+
+.alert.alert-success {
+    border-color: rgb(116, 213, 116);
+}
+
+.alert.alert-error {
+    width: 400px;
+    border-color: rgb(204, 44, 44);
+} */
+
+.alert {
+    border: 5px solid;
+    padding: 10px;
+    color: black;
+    width: 400px;
+    text-align: center;
+}
+
+.alert-success {
+    border-color: rgb(37, 120, 37);
+}
+
+.alert-error {
+    border-color: rgb(204, 44, 44);
+}

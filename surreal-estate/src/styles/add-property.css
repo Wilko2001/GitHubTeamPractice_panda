@@ -1,13 +1,10 @@
 .add-property {
-    margin: 10px;
-    padding: 0 10px;
     color: rgb(134, 75, 75);
 }
 
 form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    place-items: center;
 }
 
 .add-btn {
@@ -16,7 +13,7 @@ form {
     height: 50px;
     width: 100px;
     bottom: 50px;
-    margin-top: 200px;
+    margin-top: 50px;
     border-radius: 5px;
     font-size: large;
     font-weight: bold;
@@ -45,4 +42,12 @@ form {
     border-width: 3px;
     border-style: ridge;
     border-color: rgb(153, 138, 138);
+}
+
+.add-property img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
 }
