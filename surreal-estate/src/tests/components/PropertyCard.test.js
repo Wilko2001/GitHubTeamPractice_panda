@@ -11,10 +11,10 @@ test("renders the title correctly", () => {
 
 
 test("renders the type and city correctly", () => {
-    const Type = "Flat";
-    const City = "Leeds";
-    const { getByText } = render(<PropertyCard type={Type} city={City} />);
-    const typeElement = getByText(`${Type} - ${City}`);
+    const type = "Flat";
+    const city = "Leeds";
+    const { getByText } = render(<PropertyCard type={type} city={city} />);
+    const typeElement = getByText(`${type} - ${city}`);
     expect(typeElement).toBeInTheDocument();
 });
 

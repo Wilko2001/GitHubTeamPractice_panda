@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../styles/add-property.css"
-import image from "../images/back-image.jpeg";
+import image from "../images/backimage.png";
 import axios from "axios";
 import Alert from "./Alert";
 

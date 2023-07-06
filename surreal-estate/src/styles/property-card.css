@@ -1,30 +1,25 @@
-/* .property-card {
-    color: rgb(134, 75, 75);
-    display: grid;
-    grid-gap: 3px;
-    font-size: 20px;
-    font-weight: bold;
+.property-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 8%;
+    margin-right: 0;
 }
-
-.property-card img {
-    height: 30px;
-    width: 30px;
-    margin: 0;
-} */
 
 .property-card {
     color: rgb(134, 75, 75);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 20px;
-    font-weight: bold;
+    width: 400px;
+    border: 4px solid black;
+    padding: 10px;
 }
 
 .property-row {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .property-row img {
