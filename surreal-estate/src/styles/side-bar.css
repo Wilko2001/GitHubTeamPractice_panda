@@ -1,7 +1,6 @@
 .sidebar {
-    color: rgb(134, 75, 75);
     margin: 0;
-    width: 200px;
+    width: 300px;
     background-color: rgb(174, 154, 154);
     position: fixed;
     overflow: auto;
@@ -17,4 +16,33 @@
 
 .sidebar a:hover:not(.active) {
     color: white;
+}
+
+.search-input {
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    border-style: ridge;
+    border-width: 4px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.search-button {
+    height: 30px;
+    width: 90px;
+    border-radius: 5px;
+    background-color: rgb(252, 249, 249);
+    font-size: large;
+    color: white;
+    border-width: 3px;
+}
+
+.search-button img {
+    height: 25px;
+    width: 30px;
+}
+
+.search-form {
+    margin-top: 10px;
 }

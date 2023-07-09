@@ -9,8 +9,8 @@ const AddProperties = () => {
         fields: {
             title: "",
             city: "Manchester",
-            property_type: "Flat",
-            email_address: "",
+            type: "Flat",
+            email: "",
             price: "",
             bathrooms: "",
             bedrooms: "",
@@ -30,7 +30,7 @@ const AddProperties = () => {
         event.preventDefault();
 
         setAlert({ message: "", isSuccess: false });
-
+        console.log(fields);
         axios.post('http://localhost:3000/api/v1/PropertyListing', fields)
             .then(() => {
                 setAlert({
@@ -85,8 +85,8 @@ const AddProperties = () => {
                     <br />
                     <select className="add_dropdown"
                         id="property_type"
-                        name="property_type"
-                        value={fields.property_type}
+                        name="type"
+                        value={fields.type}
                         onChange={handleFieldChange}>
                         <option value="Flat">Flat</option>
                         <option value="Detached">Detached</option>
@@ -103,8 +103,8 @@ const AddProperties = () => {
                     <br />
                     <input className="add_property_input"
                         id="email_address"
-                        name="email_address"
-                        value={fields.email_adress}
+                        name="email"
+                        value={fields.email}
                         onChange={handleFieldChange}
                         placeholder='johndoe@example.com'>
                     </input>
