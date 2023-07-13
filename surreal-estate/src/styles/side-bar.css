@@ -2,7 +2,7 @@
     margin: 0;
     width: 300px;
     background-color: rgb(174, 154, 154);
-    position: fixed;
+    position: absolute;
     overflow: auto;
     height: 100%;
 }
@@ -36,6 +36,7 @@
     font-size: large;
     color: white;
     border-width: 3px;
+    margin-top: 5px;
 }
 
 .search-button img {

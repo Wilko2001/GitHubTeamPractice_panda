@@ -5,10 +5,13 @@ import icon2 from "../images/bath.svg";
 import icon3 from "../images/sterling-sign-solid.svg";
 import icon4 from "../images/email.svg";
 import icon5 from "../images/city.svg";
+import logo from "../images/project-logo.png";
+import { Link } from 'react-router-dom';
 
 const PropertyCard = ({ title, type, bathrooms, bedrooms, price, city, email }) => {
     return (
         <div className="property-card">
+            <img src={logo} alt="site-logo" />
             <div className="property-row">
                 <p>{title}</p>
             </div>
@@ -30,7 +33,7 @@ const PropertyCard = ({ title, type, bathrooms, bedrooms, price, city, email }) 
             </div>
             <div className="property-row">
                 <img src={icon4} alt="email-icon" />
-                <p>{email}</p>
+                <Link className="email-link" to="/">{email}</Link>
             </div>
         </div>
     )

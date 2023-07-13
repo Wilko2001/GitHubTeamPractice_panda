@@ -1,19 +1,3 @@
-/* .alert {
-    border: 50px;
-    padding: 10px;
-    color: black;
-    width: 400px;
-}
-
-.alert.alert-success {
-    border-color: rgb(116, 213, 116);
-}
-
-.alert.alert-error {
-    width: 400px;
-    border-color: rgb(204, 44, 44);
-} */
-
 .alert {
     border: 5px solid;
     padding: 10px;
@@ -24,8 +8,16 @@
 
 .alert-success {
     border-color: rgb(37, 120, 37);
+    background-color: rgb(37, 120, 37);
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
 .alert-error {
     border-color: rgb(204, 44, 44);
+    background-color: rgb(204, 44, 44);
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
 }

@@ -42,7 +42,9 @@ const Properties = () => {
     return (
         <div>
             <SideBar />
-            {alert.message && <Alert message={alert.message} />}
+            <div className="property-error">
+                {alert.message && <Alert message={alert.message} />}
+            </div>
             <div className="property-grid">
                 {properties.map((Property) => (
                     <div key={Property.id}>
